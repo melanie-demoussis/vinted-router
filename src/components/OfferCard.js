@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const OfferCard = ({ offerInfos }) => {
   //   console.log("OfferCard");
   return (
-    <Link to={"/offer/${offerInfos._id}"}>
+    <Link to={`/offer/${offerInfos._id}`}>
       <article className="annonce">
         <div className="user">
           {offerInfos.owner.account.avatar && (

@@ -11,22 +11,20 @@ const Offer = () => {
   const id = params.id;
   console.log(params);
 
-  useEffect =
-    (() => {
-      const fetchData = async () => {
-        try {
-          const response = await axios.get(
-            "https://lereacteur-vinted-api.herokuapp.com/offers/:id"
-          );
-          setData(response.data);
-          setIsLoading(false);
-        } catch (error) {
-          console.log(error.message);
-        }
-      };
-      fetchData();
-    },
-    [id]);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          `https://lereacteur-vinted-api.herokuapp.com/offer/${id}`
+        );
+        setData(response.data);
+        setIsLoading(false);
+      } catch (error) {
+        console.log(error.message);
+      }
+    };
+    fetchData();
+  }, [id]);
 
   return isLoading ? (
     <p>Loading...</p>
