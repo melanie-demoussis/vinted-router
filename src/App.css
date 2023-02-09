@@ -1,0 +1,54 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  /* background-color: aquamarine; */
+  height: 120px;
+  width: 1280px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.second-plan {
+  /* background-color: blue; */
+}
+.second-plan img {
+  width: 100vw;
+  height: 450px;
+  object-fit: cover;
+}
+.first-plan {
+  background-color: white;
+  border: 1px solid black;
+  width: 410px;
+  height: 200px;
+}
+/* le Main */
+.offer {
+  background-color: aqua;
+  width: 1280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product_pictures {
+  background-color: beige;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product_pictures img {
+  height: 358px;
+  width: 232px;
+  padding-top: 20px;
+}
+.user {
+  height: 487px;
+  display: flex;
+}
