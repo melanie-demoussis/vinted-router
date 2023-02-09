@@ -8,7 +8,12 @@ header {
   /* background-color: aquamarine; */
   height: 120px;
   width: 1280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
 }
+
 main {
   display: flex;
   flex-direction: column;
@@ -19,7 +24,7 @@ main {
   /* background-color: blue; */
 }
 .second-plan img {
-  width: 100vw;
+  width: 1224px;
   height: 450px;
   object-fit: cover;
 }
@@ -30,25 +35,25 @@ main {
   height: 200px;
 }
 /* le Main */
-.offer {
-  background-color: aqua;
-  width: 1280px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.product_pictures {
-  background-color: beige;
+.card {
+  background-color: pink;
+  width: 1224px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+.annonce {
+  width: 231;
+  height: 476px;
+}
+.picture_container {
+  width: 230px;
+  height: 360px;
+  object-fit: cover;
 }
 
-.product_pictures img {
-  height: 358px;
-  width: 232px;
-  padding-top: 20px;
-}
-.user {
-  height: 487px;
-  display: flex;
+.user img {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
 }
