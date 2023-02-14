@@ -34,7 +34,7 @@ const Home = () => {
     <p>Loading...</p>
   ) : (
     <div className="App">
-      <Main></Main>
+      <Main />
 
       <div className="card">
         {data.offers.map((offer) => {

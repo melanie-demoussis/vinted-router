@@ -9,7 +9,7 @@ const Offer = () => {
   //Je récupère l'id présent dans l'url
   const params = useParams();
   const id = params.id;
-  console.log(params);
+  // console.log(params);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -35,10 +35,11 @@ const Offer = () => {
         <p>{data.product_price} €</p>
         {data.product_details.map((detail, index) => {
           const key = Object.keys(detail)[0];
-          console.log(key);
-          console.log(detail[key]);
+          // console.log(key);
+          // console.log(detail[key]);
           return (
             <div key={index}>
+              <span>{key} : </span>
               <span>{detail[key]}</span>
             </div>
           );

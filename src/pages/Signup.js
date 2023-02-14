@@ -39,9 +39,11 @@ const Signup = ({ handleToken }) => {
         setErrorMessage(
           "Cet email est déjà utilisé, veuillez entrer un email valide"
         );
+      } // si il manque des paramètres, envoyer un message pour demander de compléter les inputs
+      if (error.response.data.message === "Missing parameters") {
+        setErrorMessage("Veuillez remplir tous les champs");
       }
     }
-    // si il manque des paramètres, envoyer un message pour demander de compléter les inputs
   };
 
   return (

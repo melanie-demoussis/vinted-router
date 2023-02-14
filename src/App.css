@@ -13,6 +13,11 @@ header {
   justify-content: center;
   align-items: center;
 }
+.header-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .logo {
   width: 104px;
@@ -53,13 +58,14 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 25px;
+
   position: absolute;
   top: 70px;
   left: 360px;
 }
 .first-plan h2 {
   font-size: 34px;
+  padding: 25px;
 }
 .first-plan button {
   width: 183px;
@@ -71,6 +77,8 @@ main {
   border: none;
   border-radius: 5px;
   margin-top: 40px;
+  margin-left: 25px;
+  margin-bottom: 40px;
 }
 
 /* OFFER */
@@ -88,7 +96,6 @@ main {
   background-color: blue;
   width: 800px;
   height: 600px;
-  object-fit: cover;
 
   margin-right: 30px;
 }
@@ -154,4 +161,20 @@ main {
 }
 .newsletter {
   display: flex;
+}
+.add-publish {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.connect {
+  display: flex;
+  flex-direction: column;
 }

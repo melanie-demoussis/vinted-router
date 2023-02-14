@@ -2,6 +2,7 @@ import "./App.css";
 
 // import package
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 
 // import des composants/pages
 import Home from "./pages/Home";
@@ -9,7 +10,7 @@ import Offer from "./pages/Offer";
 import Signup from "./pages/Signup";
 import Header from "./components/Header";
 import Login from "./pages/Login";
-import { useState } from "react";
+import Publish from "./pages/Publish";
 
 function App() {
   const [token, setToken] = useState();
@@ -27,12 +28,13 @@ function App() {
     <Router>
       {/* Routes = Doit contenir toutes les routes */}
       {/* Je veux que mon header s'affiche sur toutes les pages */}
-      <Header handleToken={handleToken} token={token}></Header>
+      <Header handleToken={handleToken} token={token} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/offer/:id" element={<Offer />} />
         <Route path="/signup" element={<Signup handleToken={handleToken} />} />
         <Route path="/login" element={<Login handleToken={handleToken} />} />
+        <Route path="/publish" element={<Publish token={token} />} />
       </Routes>
     </Router>
   );
