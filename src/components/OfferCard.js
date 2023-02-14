@@ -15,14 +15,17 @@ const OfferCard = ({ offerInfos }) => {
           <span>{offerInfos.owner.account.username}</span>
         </div>
         <div className="picture_container">
-          <img src={offerInfos.product_image.secure_url} alt="annonce" />
+          <div>
+            <img src={offerInfos.product_image.secure_url} alt="annonce" />
+          </div>
+
           <p>{offerInfos.product_price} €</p>
           <div>
             {offerInfos.product_details.map((detail, index) => {
               if (detail.TAILLE) {
-                return <p key={index}>{detail.TAILLE}</p>;
+                return <p key={index}> TAILLE {detail.TAILLE}</p>;
               } else if (detail.MARQUE) {
-                return <p key={index}>{detail.MARQUE}</p>;
+                return <p key={index}> MARQUE {detail.MARQUE}</p>;
               } else {
                 return null;
               }

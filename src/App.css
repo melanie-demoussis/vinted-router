@@ -4,51 +4,131 @@
   justify-content: center;
   align-items: center;
 }
+
+/* Le HEADER */
 header {
   /* background-color: aquamarine; */
   height: 120px;
-  width: 1280px;
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-around;
 }
 
+.logo {
+  width: 104px;
+  height: 41px;
+}
+
+/* ROUTE HOME */
+/* Le MAIN */
 main {
+  /* background-color: aqua; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.second-plan {
-  /* background-color: blue; */
+
+.hero {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 453px;
+  /* background-image: url(/src/assets/secondPlan.webp); */
 }
+
 .second-plan img {
-  width: 1224px;
-  height: 450px;
+  width: 100vw;
+  height: 453px;
+  display: block;
   object-fit: cover;
 }
 .first-plan {
   background-color: white;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 410px;
-  height: 200px;
+  height: 270px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 25px;
+  position: absolute;
+  top: 70px;
+  left: 360px;
 }
-/* le Main */
+.first-plan h2 {
+  font-size: 34px;
+}
+.first-plan button {
+  width: 183px;
+  height: 42px;
+  font-size: 16px;
+  background-color: #2baeb7;
+  color: white;
+  box-shadow: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+/* OFFER */
+
+.offer {
+  background-color: #ebedee;
+  width: 1900px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+.offer img {
+  background-color: blue;
+  width: 800px;
+  height: 600px;
+  object-fit: cover;
+
+  margin-right: 30px;
+}
+.information {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 370px;
+  height: 600px;
+}
+
+.annonce {
+  width: 231;
+  height: 476px;
+}
+/* .user {
+  background-color: blue;
+} */
+
 .card {
-  background-color: pink;
+  /* background-color: pink; */
   width: 1224px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.annonce {
-  width: 231;
-  height: 476px;
-}
+
 .picture_container {
-  width: 230px;
+  width: 235px;
   height: 360px;
+  display: flex;
+  flex-direction: column;
+  object-fit: cover;
+}
+.picture_container img {
+  width: 232px;
+  height: 369px;
   object-fit: cover;
 }
 
@@ -56,4 +136,22 @@ main {
   height: 25px;
   width: 25px;
   border-radius: 50%;
+}
+.inscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* h2{
+  
+} */
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter {
+  display: flex;
 }
