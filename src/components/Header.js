@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/logo-vinted.svg";
+
 const Header = ({ token, handleToken, search, setSearch }) => {
   return (
     <header>
       <div>
-        <img className="logo" src={logo} alt="logo vinted" />
+        <Link to="/">
+          <button>
+            <img className="logo" src={logo} alt="logo vinted" />
+          </button>
+        </Link>
       </div>
 
       <div>
@@ -18,6 +23,7 @@ const Header = ({ token, handleToken, search, setSearch }) => {
         />
         <div> button de tri </div>
       </div>
+
       <div className="header-button">
         <span> tri de prix </span>
         <input type="checkbox" />

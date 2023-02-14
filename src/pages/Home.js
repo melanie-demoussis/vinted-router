@@ -18,7 +18,7 @@ const Home = () => {
     const flechData = async () => {
       try {
         const response = await axios.get(
-          "https://lereacteur-vinted-api.herokuapp.com/offers"
+          `https://lereacteur-vinted-api.herokuapp.com/offers`
         );
         setData(response.data);
         // console.log(response.data.offers);

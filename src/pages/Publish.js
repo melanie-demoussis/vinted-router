@@ -43,7 +43,7 @@ const Publish = ({ token }) => {
   };
 
   return token ? (
-    <div className="add-publish">
+    <div className="create-publish">
       <h2>Vends ton article</h2>
       <form onSubmit={handleSubmit}>
         <label htmlFor="file">choisir un fichier</label>
@@ -69,7 +69,9 @@ const Publish = ({ token }) => {
         <CustomInput title={"État"} state={condition} setState={setCondition} />
         <CustomInput title={"Lieu"} state={city} setState={setCity} />
         <CustomInput title={"Prix"} state={price} setState={setPrice} />
-        <input type="submit" value="Publier l'offre" />
+        <div className="add-publish">
+          <input type="submit" value="Ajouter" />
+        </div>
       </form>
     </div>
   ) : (

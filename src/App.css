@@ -33,6 +33,13 @@ main {
   justify-content: center;
   align-items: center;
 }
+.card {
+  /* background-color: antiquewhite; */
+  width: 1224px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .hero {
   display: flex;
@@ -118,12 +125,20 @@ main {
   background-color: blue;
 } */
 
-.card {
+.verified-card {
   /* background-color: pink; */
   width: 1224px;
+  height: 300px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+.card-number {
+  /* background-color: #2baeb7; */
+  width: 400px;
+  height: 300px;
+  margin: 50px;
 }
 
 .picture_container {
@@ -162,10 +177,14 @@ main {
 .newsletter {
   display: flex;
 }
-.add-publish {
+.create-publish {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.add-publish {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .login {
@@ -177,4 +196,7 @@ main {
 .connect {
   display: flex;
   flex-direction: column;
+}
+.payment {
+  background-color: rosybrown;
 }
