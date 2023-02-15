@@ -3,10 +3,11 @@ import { useStripe, useElements, CardElement } from "@stripe/react-stripe-js";
 import axios from "axios";
 
 const CheckoutForm = () => {
-  const stripe = useStripe();
-  const elements = useElements();
   const [isLoading, setIsLoading] = useState(false);
   const [completed, setCompleted] = useState(false);
+
+  const stripe = useStripe();
+  const elements = useElements();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -16,10 +17,10 @@ const CheckoutForm = () => {
       setIsLoading(true);
       //récupérer le contenu de CardElement
       //récupère les données bancaires que l'utilisateur entre
-      const CardElement = elements.getElement(CardElement);
+      const cardElement = elements.getElement(CardElement);
       // demande de création d'un token via l'API stripe
       //envoi des données bancaires dans la requete
-      const stripeResponse = await stripe.createToken(CardElement, {
+      const stripeResponse = await stripe.createToken(cardElement, {
         name: "L'id de l'acheteur",
       });
       console.log(stripeResponse);
